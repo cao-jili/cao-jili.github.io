@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/blogcreate.jpeg">
 <meta property="article:published_time" content="2023-03-06T06:58:40.000Z">
-<meta property="article:modified_time" content="2023-03-07T01:58:43.800Z">
+<meta property="article:modified_time" content="2023-03-07T02:19:15.932Z">
 <meta property="article:author" content="cao-jili">
 <meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary_large_image">
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          1.4k 字
         
       </span>
     
@@ -288,7 +288,7 @@
  启动docker <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">sudo systemctl <span class="hljs-literal">start</span> docker<br></code></pre></td></tr></table></figure>
  检查docker是否安装成功 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">sudo docker <span class="hljs-built_in">run</span> hello-world<br></code></pre></td></tr></table></figure></li>
 </ol>
-<h2 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h2><ol>
+<h2 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h2><h3 id="容器使用"><a href="#容器使用" class="headerlink" title="容器使用"></a>容器使用</h3><ol>
 <li>运行交互式容器,使用exit 命令或者使用 CTRL+D 退出容器 <figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">docker</span> run -i -t ubuntu:<span class="hljs-number">15</span>.<span class="hljs-number">10</span> /bin/bash<br></code></pre></td></tr></table></figure>
 <ul>
 <li>-t 在容器中指定伪终端或终端</li>
@@ -296,6 +296,11 @@
 </ul>
 </li>
 <li>后台模式启动容器 <figure class="highlight fsharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs fsharp">docker run <span class="hljs-operator">-</span>d ubuntu<span class="hljs-operator">:</span>15.10 <span class="hljs-operator">/</span>bin<span class="hljs-operator">/</span>sh <span class="hljs-operator">-</span>c &quot;<span class="hljs-keyword">while</span> <span class="hljs-literal">true</span>; <span class="hljs-keyword">do</span> echo hello world; sleep 1; <span class="hljs-keyword">done</span>&quot;<br></code></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="镜像使用"><a href="#镜像使用" class="headerlink" title="镜像使用"></a>镜像使用</h3><ol>
+<li>docker images  列出本地镜像</li>
+<li>docker pull 获取镜像</li>
+<li>docker search 搜索镜像</li>
 </ol>
 <h2 id="构建web"><a href="#构建web" class="headerlink" title="构建web"></a>构建web</h2><ol>
 <li><p>载入镜像</p>
